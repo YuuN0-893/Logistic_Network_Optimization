@@ -1,0 +1,82 @@
+data;
+
+set PLANTS := Plant1 Plant2 Plant3 Plant4 Plant5 Plant6;
+set WAREHOUSES := Warehouse1 Warehouse2 Warehouse3 Warehouse4;
+set CUSTOMERS := Customer1 Customer2 Customer3 Customer4 Customer5;
+
+param c_pw :=
+Plant1,Warehouse1 700 
+Plant1,Warehouse2 1000 
+Plant1,Warehouse3 900 
+Plant1,Warehouse4 1200
+Plant2,Warehouse1 800 
+Plant2,Warehouse2 500
+Plant2,Warehouse3 600
+Plant2,Warehouse4 700
+Plant3,Warehouse1 850 
+Plant3,Warehouse2 600
+Plant3,Warehouse3 700
+Plant3,Warehouse4 500
+Plant4,Warehouse1 600 
+Plant4,Warehouse2 800
+Plant4,Warehouse3 500
+Plant4,Warehouse4 600
+Plant5,Warehouse1 500 
+Plant5,Warehouse2 600
+Plant5,Warehouse3 450
+Plant5,Warehouse4 700
+Plant6,Warehouse1 700 
+Plant6,Warehouse2 600
+Plant6,Warehouse3 750
+Plant6,Warehouse4 500;
+
+param: cap_p :=
+Plant1 300
+Plant2 200
+Plant3 300
+Plant4 250
+Plant5 350
+Plant6 400;
+
+param: f_p :=
+Plant1 55000
+Plant2 40000
+Plant3 45000
+Plant4 50000
+Plant5 42000
+Plant6 40000;
+
+param: c_wc :=
+Warehouse1,Customer1 40
+Warehouse1,Customer2 80
+Warehouse1,Customer3 60 
+Warehouse1,Customer4 90
+Warehouse1,Customer5 50
+Warehouse2,Customer1 60
+Warehouse2,Customer2 50
+Warehouse2,Customer3 75
+Warehouse2,Customer4 40
+Warehouse2,Customer5 35
+Warehouse3,Customer1 55
+Warehouse3,Customer2 40
+Warehouse3,Customer3 65
+Warehouse3,Customer4 60
+Warehouse3,Customer5 80
+Warehouse4,Customer1 80
+Warehouse4,Customer2 30
+Warehouse4,Customer3 80
+Warehouse4,Customer4 50
+Warehouse4,Customer5 60;
+
+param: f_w :=
+Warehouse1 40000
+Warehouse2 50000
+Warehouse3 35000
+Warehouse4 60000;
+
+param: demand_c:=
+Customer1 200
+Customer2 300
+Customer3 200
+Customer4 150
+Customer5 250;
