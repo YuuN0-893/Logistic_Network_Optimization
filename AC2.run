@@ -1,0 +1,9 @@
+reset;
+model AC3.mod;
+data AC2.dat;
+option solver cplex;
+solve;
+display y_w;
+display y_p;
+display x_pw;
+display x_wc;
